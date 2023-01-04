@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+<h1>Posts</h1>
+
+<div class="flex justify-center">
+  <%= render partial: "search/form", locals: { results: [] } %>
+</div>
+
+<div id="posts">
+  <%= render "posts/posts", posts: @posts %>
+</div>
+<%= link_to "New post", new_post_path %>
