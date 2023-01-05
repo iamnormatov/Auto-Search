@@ -9,7 +9,7 @@ class PostsTest < ApplicationSystemTestCase
     visit posts_url
     assert_selector "h1", text: "Posts"
   end
-
+ 
   test "should create post" do
     visit posts_url
     click_on "New post"
